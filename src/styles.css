@@ -102,17 +102,11 @@ main {
     min-width: calc(min(250px, 50%));
     transition: all .3s ease-in-out;
     cursor: pointer;
+    transition: .3s ease-in-out;
 }
 
-/* .item img {
-    max-width: 100%;
-    min-width: 250px;
-    vertical-align: middle;
-    height: auto;
-} */
-
 .item:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 @media (width<=1280px) {
@@ -135,6 +129,10 @@ main {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+    }
+
+    .top-item:hover {
+        opacity: 1;
     }
 
     .first,
