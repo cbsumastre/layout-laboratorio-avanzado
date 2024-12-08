@@ -92,21 +92,27 @@ main {
 .first,
 .second {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 50px 2px;
 }
 
 .item {
-    flex: 1;
-    min-width: calc(min(250px, 50%));
+    flex: 1 1 250px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: all .3s ease-in-out;
     cursor: pointer;
-    transition: .3s ease-in-out;
 }
 
 .item:hover {
     transform: scale(1.05);
+}
+
+.item img {
+    max-width: 100%;
+    height: auto; 
+    display: block;
 }
 
 @media (width<=1280px) {
